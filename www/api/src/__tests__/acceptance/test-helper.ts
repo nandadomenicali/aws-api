@@ -1,4 +1,4 @@
-import {AwsApplication} from '../..';
+import {ApiApplication} from '../..';
 import {
   createRestAppClient,
   givenHttpServerConfig,
@@ -14,7 +14,7 @@ export async function setupApplication(): Promise<AppWithClient> {
     // port: +process.env.PORT,
   });
 
-  const app = new AwsApplication({
+  const app = new ApiApplication({
     rest: restConfig,
   });
 
@@ -27,6 +27,6 @@ export async function setupApplication(): Promise<AppWithClient> {
 }
 
 export interface AppWithClient {
-  app: AwsApplication;
+  app: ApiApplication;
   client: Client;
 }
