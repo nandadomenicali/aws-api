@@ -1,12 +1,10 @@
-# Docker 🐳
-
+# Docker 🐳    
 ## Docker
-Baixe e instale o Docker em https://www.docker.com/
-
+Baixe e instale o Docker em https://www.docker.com/ 
 ### Primeira execução
 Se esta é a primeira vez que você está executando seu ambiente, utilize o seguinte comando para compilar e inicializar
 seus containers.
-```
+```  
 ./docker/dev-init.sh
 ```
 
@@ -38,7 +36,6 @@ Windows:
 ```
 docker-compose --profile dev up
 ```
-
 ### Acessando o container do Loopback via SSH
 Abra o terminal e de dentro da pasta deste repositório execute:
 
